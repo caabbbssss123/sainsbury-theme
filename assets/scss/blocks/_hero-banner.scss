@@ -1,0 +1,67 @@
+.hero-banner {
+  min-height: 100dvh;
+  padding-top: 200px;
+  background-size: cover;
+  background-position: bottom center;
+  color: $white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & + section {
+    padding-top: 100px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 60px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 120px;
+  }
+
+  .row {
+    --gutter-x: 86px;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+
+    .col-left {
+      padding-bottom: 30px;
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .hero-banner__heading {
+    margin-bottom: 40px;
+    max-width: 650px;
+  }
+
+  .hero-banner__content-copy {
+    max-width: 694px;
+    margin-bottom: 50px;
+  }
+
+  .hero-banner__image {
+    border-radius: 10px;
+    display: block;
+    margin-bottom: -100px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: -60px;
+    }
+  }
+}

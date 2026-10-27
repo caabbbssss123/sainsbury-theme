@@ -1,0 +1,9 @@
+import './scss/theme.scss';
+import './js/global';
+import './js/smooth-scroll';
+import './js/header';
+import './js/swiper';
+import './js/card-grid';
+import './js/icon-grid';
+import './js/image-banner';
+import './js/form';

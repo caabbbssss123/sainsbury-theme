@@ -1,0 +1,2182 @@
+/*
+ * Colour Variations
+ *
+ * Change the element colours based on the containing background class.
+ */
+
+/* ==========================================================================
+   Background White
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-white .text-underline,
+[class*="background-"] .background-white .text-underline {
+	text-decoration-color: var(--bg-white-link-decoration);
+}
+
+main .background-white .wysiwyg ul li::before,
+main [class*="background-"] .background-white .wysiwyg ul li::before {
+	background-color: var(--bg-white-text);
+}
+
+.background-white th,
+.background-white td,
+[class*="background-"] .background-white th,
+[class*="background-"] .background-white td {
+	border-color:var(--bg-white-text);
+}
+.background-white .row-divider th,
+.background-white .row-divider td,
+[class*="background-"] .background-white .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-white .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-white-text);
+}
+.background-white hr,
+[class*="background-"] .background-white hr {
+	background-color:var(--bg-white-text);
+}
+
+/*
+ * Links
+ */
+.background-white a:not(.btn),
+[class*="background-"] .background-white a:not(.btn) {
+	color: var(--bg-white-link);
+	text-decoration-color: var(--bg-white-link-decoration);
+}
+.background-white a:not(.btn):hover,
+[class*="background-"] .background-white a:not(.btn):hover {
+	color: var(--bg-white-link-highlight);
+}
+
+.background-white .link-icon,
+[class*="background-"] .background-white .link-icon {
+    border-color: var(--bg-white-text);
+    color: var(--bg-white-text);
+}
+.background-white a:hover .link-icon,
+[class*="background-"] .background-white a:hover .link-icon {
+	background-color: var(--bg-white-text);
+    border-color: var(--bg-white-text);
+    color: var(--bg-white-icon-highlight);
+}
+
+.background-white .btn--white,
+[class*="background-"] .background-white .btn--white {
+	color: var(--bg-white-white-button-text);
+}
+.background-white .btn--hollow--white:hover,
+[class*="background-"] .background-white .btn--hollow--white:hover,
+.background-white a:hover .btn--hollow--white,
+[class*="background-"] .background-white a:hover .btn--hollow--white {
+	color: var(--bg-white-white-button-text);
+}
+
+.background-white .btn--white:hover,
+[class*="background-"] .background-white .btn--white:hover,
+.background-white a:hover .btn--white,
+[class*="background-"] .background-white a:hover .btn--white,
+.background-white .btn--black:hover,
+[class*="background-"] .background-white .btn--black:hover,
+.background-white a:hover .btn--black,
+[class*="background-"] .background-white a:hover .btn--black,
+.background-white .btn--primary:hover,
+[class*="background-"] .background-white .btn--primary:hover,
+.background-white a:hover .btn--primary,
+[class*="background-"] .background-white a:hover .btn--primary,
+.background-white .btn--secondary:hover,
+[class*="background-"] .background-white .btn--secondary:hover,
+.background-white a:hover .btn--secondary,
+[class*="background-"] .background-white a:hover .btn--secondary,
+.background-white .btn--tertiary:hover,
+[class*="background-"] .background-white .btn--tertiary:hover,
+.background-white a:hover .btn--tertiary,
+[class*="background-"] .background-white a:hover .btn--tertiary {
+	background-color: var(--bg-white-button-highlight);
+	color: var(--bg-white-button-highlight-text);
+}
+.background-white .btn--highlight:hover,
+[class*="background-"] .background-white .btn--highlight:hover,
+.background-white a:hover .btn--highlight,
+[class*="background-"] .background-white a:hover .btn--highlight{
+	background-color: var(--bg-white-text);
+    color: var(--bg-white-icon-highlight);
+}
+
+.background-white .animated-underline,
+[class*="background-"] .background-white .animated-underline {
+	color: var(--bg-white-link);
+}
+.background-white .animated-underline:hover,
+[class*="background-"] .background-white .animated-underline:hover {
+	color: var(--bg-white-link-highlight);
+}
+.background-white .animated-underline::after,
+[class*="background-"] .background-white .animated-underline::after {
+	background-color: var(--bg-white-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-white .pagination__numbers span.current,
+[class*="background-"] .background-white .pagination__numbers span.current {
+	background-color: var(--bg-white-text);
+	color: var(--bg-white-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-white .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-white .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-white-text);
+	color: var(--bg-white-text);
+}
+.background-white .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-white .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-white-text);
+	border-color: var(--bg-white-text);
+	color: var(--bg-white-icon-highlight);
+}
+.background-white .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-white .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-white .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-white .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-white-text);
+}
+.background-white .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-white .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-white .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-white .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-white-text);
+}
+.background-white .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-white .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-white .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-white .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-white-text);
+}
+
+/*
+ * Accordions
+ */
+.background-white .panel__title__link,
+[class*="background-"] .background-white .panel__title__link {
+	border-top-color: var(--bg-white-text);
+	color: var(--bg-white-text);
+}
+.background-white .title__link__icon::before,
+[class*="background-"] .background-white .title__link__icon::before,
+.background-white .title__link__icon::after,
+[class*="background-"] .background-white .title__link__icon::after {
+    background-color: var(--bg-white-text);
+}
+.background-white .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-white .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-white-text);
+	border-color: var(--bg-white-text);
+	color: var(--bg-white-icon-highlight);
+}
+.background-white .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-white .panel__title__link:hover > .title__link__icon,
+.background-white .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-white .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-white-text);
+	border-color: var(--bg-white-text);
+	color: var(--bg-white-icon-highlight);
+}
+.background-white .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-white .panel__title__link:hover .title__link__icon::before,
+.background-white .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-white .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-white .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-white .panel__title__link:hover .title__link__icon::after,
+.background-white .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-white .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-white-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-white input,
+[class*="background-"] .background-white input,
+.background-white textarea,
+[class*="background-"] .background-white textarea,
+.background-white select,
+[class*="background-"] .background-white select,
+.background-white input[type="checkbox"], 
+[class*="background-"] .background-white input[type="checkbox"],
+.background-white input[type="radio"],
+[class*="background-"] .background-white input[type="radio"] {
+	border-color: var(--bg-white-text);
+	color: var(--bg-white-text);
+}
+.background-white input:hover,
+[class*="background-"] .background-white input:hover,
+.background-white textarea:hover,
+[class*="background-"] .background-white textarea:hover,
+.background-white select:hover,
+[class*="background-"] .background-white select:hover,
+.background-white input[type="checkbox"]:hover, 
+[class*="background-"] .background-white input[type="checkbox"]:hover,
+.background-white input[type="radio"]:hover,
+[class*="background-"] .background-white input[type="radio"]:hover {
+	border-color: var(--bg-white-input-highlight);
+}
+.background-white input:focus,
+[class*="background-"] .background-white input:focus,
+.background-white textarea:focus,
+[class*="background-"] .background-white textarea:focus,
+.background-white select:focus,
+[class*="background-"] .background-white select:focus,
+.background-white input[type="checkbox"]:focus, 
+[class*="background-"] .background-white input[type="checkbox"]:focus,
+.background-white input[type="radio"]:focus,
+[class*="background-"] .background-white input[type="radio"]:focus {
+	background-color:var(--bg-white-input-highlight); 
+	border-color:var(--bg-white-input-highlight); 
+	color:var(--bg-white-input-highlight-text);
+}
+.background-white input:checked,
+[class*="background-"] .background-white input:checked,
+.background-white input:checked:hover,
+[class*="background-"] .background-white input:checked:hover,
+.background-white input:checked:focus,
+[class*="background-"] .background-white input:checked:focus {
+	background-color:var(--bg-white-text); 
+	border-color:var(--bg-white-text); 
+}
+
+.background-white button,
+[class*="background-"] .background-white button {
+	background-color:var(--bg-white-button); 
+	color:var(--bg-white-button-text); 
+}
+.background-white button:hover,
+[class*="background-"] .background-white button:hover,
+.background-white button:focus,
+[class*="background-"] .background-white button:focus {
+	background-color:var(--bg-white-button-highlight); 
+	color:var(--bg-white-button-highlight-text); 
+}
+
+.background-white .gform_fileupload_multifile,
+[class*="background-"] .background-white .gform_fileupload_multifile {
+	border-color: var(--bg-white-text);
+}
+.background-white .gform_fileupload_multifile button,
+[class*="background-"] .background-white .gform_fileupload_multifile button,
+.background-white .gform_delete_file,
+[class*="background-"] .background-white .gform_delete_file {
+	color:var(--bg-white-text);
+	text-decoration-color: var(--bg-white-link-decoration);
+}
+.background-white .gform_delete_file:hover,
+[class*="background-"] .background-white .gform_delete_file:hover,
+.background-white .gform_delete_file:focus,
+[class*="background-"] .background-white .gform_delete_file:focus{
+	color:var(--bg-white-text);
+}
+
+.background-white img.gform_ajax_spinner,
+[class*="background-"] .background-white img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner.svg");
+}
+
+.background-white .jcf-select .jcf-select-text,
+[class*="background-"] .background-white .jcf-select .jcf-select-text {
+	border-color: var(--bg-white-text);
+	color: var(--bg-white-text);
+}
+.background-white .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-white .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-white-input-highlight);
+}
+.background-white .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-white .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-white-input-highlight);
+	border-color: var(--bg-white-input-highlight);
+	color: var(--bg-white-input-highlight-text);
+}
+.background-white .jcf-select .jcf-select-opener,
+[class*="background-"] .background-white .jcf-select .jcf-select-opener {
+	color: var(--bg-white-text);
+}
+.background-white .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-white .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-white-input-highlight-text);
+}
+.background-white .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-white .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-white-input-highlight);
+}
+
+/* ==========================================================================
+   Background Grey
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-grey .text-underline,
+[class*="background-"] .background-grey .text-underline {
+	text-decoration-color: var(--bg-grey-link-decoration);
+}
+
+main .background-grey .wysiwyg ul li::before,
+main [class*="background-"] .background-grey .wysiwyg ul li::before {
+	background-color: var(--bg-grey-text);
+}
+
+.background-grey th,
+.background-grey td,
+[class*="background-"] .background-grey th,
+[class*="background-"] .background-grey td {
+	border-color:var(--bg-grey-text);
+}
+.background-grey .row-divider th,
+.background-grey .row-divider td,
+[class*="background-"] .background-grey .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-grey .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-grey-text);
+}
+.background-grey hr,
+[class*="background-"] .background-grey hr {
+	background-color:var(--bg-grey-text);
+}
+
+/*
+ * Links
+ */
+.background-grey a:not(.btn),
+[class*="background-"] .background-grey a:not(.btn) {
+	color: var(--bg-grey-link);
+	text-decoration-color: var(--bg-grey-link-decoration);
+}
+.background-grey a:not(.btn):hover,
+[class*="background-"] .background-grey a:not(.btn):hover {
+	color: var(--bg-grey-link-highlight);
+}
+
+.background-grey .link-icon,
+[class*="background-"] .background-grey .link-icon {
+    border-color: var(--bg-grey-text);
+    color: var(--bg-grey-text);
+}
+.background-grey a:hover .link-icon,
+[class*="background-"] .background-grey a:hover .link-icon {
+	background-color: var(--bg-grey-text);
+    border-color: var(--bg-grey-text);
+    color: var(--bg-grey-icon-highlight);
+}
+
+.background-grey .btn--white,
+[class*="background-"] .background-grey .btn--white {
+	color: var(--bg-grey-white-button-text);
+}
+.background-grey .btn--hollow--white:hover,
+[class*="background-"] .background-grey .btn--hollow--white:hover,
+.background-grey a:hover .btn--hollow--white,
+[class*="background-"] .background-grey a:hover .btn--hollow--white {
+	color: var(--bg-grey-white-button-text);
+}
+
+.background-grey .btn--white:hover,
+[class*="background-"] .background-grey .btn--white:hover,
+.background-grey a:hover .btn--white,
+[class*="background-"] .background-grey a:hover .btn--white,
+.background-grey .btn--black:hover,
+[class*="background-"] .background-grey .btn--black:hover,
+.background-grey a:hover .btn--black,
+[class*="background-"] .background-grey a:hover .btn--black,
+.background-grey .btn--primary:hover,
+[class*="background-"] .background-grey .btn--primary:hover,
+.background-grey a:hover .btn--primary,
+[class*="background-"] .background-grey a:hover .btn--primary,
+.background-grey .btn--secondary:hover,
+[class*="background-"] .background-grey .btn--secondary:hover,
+.background-grey a:hover .btn--secondary,
+[class*="background-"] .background-grey a:hover .btn--secondary,
+.background-grey .btn--tertiary:hover,
+[class*="background-"] .background-grey .btn--tertiary:hover,
+.background-grey a:hover .btn--tertiary,
+[class*="background-"] .background-grey a:hover .btn--tertiary {
+	background-color: var(--bg-grey-button-highlight);
+	color: var(--bg-grey-button-highlight-text);
+}
+.background-grey .btn--highlight:hover,
+[class*="background-"] .background-grey .btn--highlight:hover,
+.background-grey a:hover .btn--highlight,
+[class*="background-"] .background-grey a:hover .btn--highlight{
+	background-color: var(--bg-grey-text);
+    color: var(--bg-grey-icon-highlight);
+}
+
+.background-grey .animated-underline,
+[class*="background-"] .background-grey .animated-underline {
+	color: var(--bg-grey-link);
+}
+.background-grey .animated-underline:hover,
+[class*="background-"] .background-grey .animated-underline:hover {
+	color: var(--bg-grey-link-highlight);
+}
+.background-grey .animated-underline::after,
+[class*="background-"] .background-grey .animated-underline::after {
+	background-color: var(--bg-grey-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-grey .pagination__numbers span.current,
+[class*="background-"] .background-grey .pagination__numbers span.current {
+	background-color: var(--bg-grey-text);
+	color: var(--bg-grey-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-grey .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-grey .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-grey-text);
+	color: var(--bg-grey-text);
+}
+.background-grey .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-grey .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-grey-text);
+	border-color: var(--bg-grey-text);
+	color: var(--bg-grey-icon-highlight);
+}
+.background-grey .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-grey .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-grey .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-grey .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-grey-text);
+}
+.background-grey .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-grey .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-grey .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-grey .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-grey-text);
+}
+.background-grey .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-grey .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-grey .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-grey .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-grey-text);
+}
+
+/*
+ * Accordions
+ */
+.background-grey .panel__title__link,
+[class*="background-"] .background-grey .panel__title__link {
+	border-top-color: var(--bg-grey-text);
+	color: var(--bg-grey-text);
+}
+.background-grey .title__link__icon::before,
+[class*="background-"] .background-grey .title__link__icon::before,
+.background-grey .title__link__icon::after,
+[class*="background-"] .background-grey .title__link__icon::after {
+    background-color: var(--bg-grey-text);
+}
+.background-grey .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-grey .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-grey-text);
+	border-color: var(--bg-grey-text);
+	color: var(--bg-grey-icon-highlight);
+}
+.background-grey .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-grey .panel__title__link:hover > .title__link__icon,
+.background-grey .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-grey .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-grey-text);
+	border-color: var(--bg-grey-text);
+	color: var(--bg-grey-icon-highlight);
+}
+.background-grey .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-grey .panel__title__link:hover .title__link__icon::before,
+.background-grey .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-grey .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-grey .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-grey .panel__title__link:hover .title__link__icon::after,
+.background-grey .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-grey .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-grey-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-grey input,
+[class*="background-"] .background-grey input,
+.background-grey textarea,
+[class*="background-"] .background-grey textarea,
+.background-grey select,
+[class*="background-"] .background-grey select,
+.background-grey input[type="checkbox"], 
+[class*="background-"] .background-grey input[type="checkbox"],
+.background-grey input[type="radio"],
+[class*="background-"] .background-grey input[type="radio"] {
+	border-color: var(--bg-grey-text);
+	color: var(--bg-grey-text);
+}
+.background-grey input:hover,
+[class*="background-"] .background-grey input:hover,
+.background-grey textarea:hover,
+[class*="background-"] .background-grey textarea:hover,
+.background-grey select:hover,
+[class*="background-"] .background-grey select:hover,
+.background-grey input[type="checkbox"]:hover, 
+[class*="background-"] .background-grey input[type="checkbox"]:hover,
+.background-grey input[type="radio"]:hover,
+[class*="background-"] .background-grey input[type="radio"]:hover {
+	border-color: var(--bg-grey-input-highlight);
+}
+.background-grey input:focus,
+[class*="background-"] .background-grey input:focus,
+.background-grey textarea:focus,
+[class*="background-"] .background-grey textarea:focus,
+.background-grey select:focus,
+[class*="background-"] .background-grey select:focus,
+.background-grey input[type="checkbox"]:focus, 
+[class*="background-"] .background-grey input[type="checkbox"]:focus,
+.background-grey input[type="radio"]:focus,
+[class*="background-"] .background-grey input[type="radio"]:focus {
+	background-color:var(--bg-grey-input-highlight); 
+	border-color:var(--bg-grey-input-highlight); 
+	color:var(--bg-grey-input-highlight-text);
+}
+.background-grey input:checked,
+[class*="background-"] .background-grey input:checked,
+.background-grey input:checked:hover,
+[class*="background-"] .background-grey input:checked:hover,
+.background-grey input:checked:focus,
+[class*="background-"] .background-grey input:checked:focus {
+	background-color:var(--bg-grey-text); 
+	border-color:var(--bg-grey-text); 
+}
+
+.background-grey button,
+[class*="background-"] .background-grey button {
+	background-color:var(--bg-grey-button); 
+	color:var(--bg-grey-button-text); 
+}
+.background-grey button:hover,
+[class*="background-"] .background-grey button:hover,
+.background-grey button:focus,
+[class*="background-"] .background-grey button:focus {
+	background-color:var(--bg-grey-button-highlight); 
+	color:var(--bg-grey-button-highlight-text); 
+}
+
+.background-grey .gform_fileupload_multifile,
+[class*="background-"] .background-grey .gform_fileupload_multifile {
+	border-color: var(--bg-grey-text);
+}
+.background-grey .gform_fileupload_multifile button,
+[class*="background-"] .background-grey .gform_fileupload_multifile button,
+.background-grey .gform_delete_file,
+[class*="background-"] .background-grey .gform_delete_file {
+	color:var(--bg-grey-text);
+	text-decoration-color: var(--bg-grey-link-decoration);
+}
+.background-grey .gform_delete_file:hover,
+[class*="background-"] .background-grey .gform_delete_file:hover,
+.background-grey .gform_delete_file:focus,
+[class*="background-"] .background-grey .gform_delete_file:focus{
+	color:var(--bg-grey-text);
+}
+
+.background-grey img.gform_ajax_spinner,
+[class*="background-"] .background-grey img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner.svg");
+}
+
+.background-grey .jcf-select .jcf-select-text,
+[class*="background-"] .background-grey .jcf-select .jcf-select-text {
+	border-color: var(--bg-grey-text);
+	color: var(--bg-grey-text);
+}
+.background-grey .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-grey .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-grey-input-highlight);
+}
+.background-grey .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-grey .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-grey-input-highlight);
+	border-color: var(--bg-grey-input-highlight);
+	color: var(--bg-grey-input-highlight-text);
+}
+.background-grey .jcf-select .jcf-select-opener,
+[class*="background-"] .background-grey .jcf-select .jcf-select-opener {
+	color: var(--bg-grey-text);
+}
+.background-grey .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-grey .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-grey-input-highlight-text);
+}
+.background-grey .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-grey .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-grey-input-highlight);
+}
+
+/* ==========================================================================
+   Background Black
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-black .text-underline,
+[class*="background-"] .background-black .text-underline {
+	text-decoration-color: var(--bg-black-link-decoration);
+}
+
+main .background-black .wysiwyg ul li::before,
+main [class*="background-"] .background-black .wysiwyg ul li::before {
+	background-color: var(--bg-black-text);
+}
+
+.background-black th,
+.background-black td,
+[class*="background-"] .background-black th,
+[class*="background-"] .background-black td {
+	border-color:var(--bg-black-text);
+}
+.background-black .row-divider th,
+.background-black .row-divider td,
+[class*="background-"] .background-black .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-black .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-black-text);
+}
+.background-black hr,
+[class*="background-"] .background-black hr {
+	background-color:var(--bg-black-text);
+}
+
+/*
+ * Links
+ */
+.background-black a:not(.btn),
+[class*="background-"] .background-black a:not(.btn) {
+	color: var(--bg-black-link);
+	text-decoration-color: var(--bg-black-link-decoration);
+}
+.background-black a:not(.btn):hover,
+[class*="background-"] .background-black a:not(.btn):hover {
+	color: var(--bg-black-link-highlight);
+}
+
+.background-black .link-icon,
+[class*="background-"] .background-black .link-icon {
+    border-color: var(--bg-black-text);
+    color: var(--bg-black-text);
+}
+.background-black a:hover .link-icon,
+[class*="background-"] .background-black a:hover .link-icon {
+	background-color: var(--bg-black-text);
+    border-color: var(--bg-black-text);
+    color: var(--bg-black-icon-highlight);
+}
+
+.background-black .btn--white,
+[class*="background-"] .background-black .btn--white {
+	color: var(--bg-black-white-button-text);
+}
+.background-black .btn--hollow--white:hover,
+[class*="background-"] .background-black .btn--hollow--white:hover,
+.background-black a:hover .btn--hollow--white,
+[class*="background-"] .background-black a:hover .btn--hollow--white {
+	color: var(--bg-black-white-button-text);
+}
+
+.background-black .btn--white:hover,
+[class*="background-"] .background-black .btn--white:hover,
+.background-black a:hover .btn--white,
+[class*="background-"] .background-black a:hover .btn--white,
+.background-black .btn--black:hover,
+[class*="background-"] .background-black .btn--black:hover,
+.background-black a:hover .btn--black,
+[class*="background-"] .background-black a:hover .btn--black,
+.background-black .btn--primary:hover,
+[class*="background-"] .background-black .btn--primary:hover,
+.background-black a:hover .btn--primary,
+[class*="background-"] .background-black a:hover .btn--primary,
+.background-black .btn--secondary:hover,
+[class*="background-"] .background-black .btn--secondary:hover,
+.background-black a:hover .btn--secondary,
+[class*="background-"] .background-black a:hover .btn--secondary,
+.background-black .btn--tertiary:hover,
+[class*="background-"] .background-black .btn--tertiary:hover,
+.background-black a:hover .btn--tertiary,
+[class*="background-"] .background-black a:hover .btn--tertiary {
+	background-color: var(--bg-black-button-highlight);
+	color: var(--bg-black-button-highlight-text);
+}
+.background-black .btn--highlight:hover,
+[class*="background-"] .background-black .btn--highlight:hover,
+.background-black a:hover .btn--highlight,
+[class*="background-"] .background-black a:hover .btn--highlight{
+	background-color: var(--bg-black-text);
+    color: var(--bg-black-icon-highlight);
+}
+
+.background-black .animated-underline,
+[class*="background-"] .background-black .animated-underline {
+	color: var(--bg-black-link);
+}
+.background-black .animated-underline:hover,
+[class*="background-"] .background-black .animated-underline:hover {
+	color: var(--bg-black-link-highlight);
+}
+.background-black .animated-underline::after,
+[class*="background-"] .background-black .animated-underline::after {
+	background-color: var(--bg-black-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-black .pagination__numbers span.current,
+[class*="background-"] .background-black .pagination__numbers span.current {
+	background-color: var(--bg-black-text);
+	color: var(--bg-black-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-black .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-black .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-black-text);
+	color: var(--bg-black-text);
+}
+.background-black .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-black .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-black-text);
+	border-color: var(--bg-black-text);
+	color: var(--bg-black-icon-highlight);
+}
+.background-black .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-black .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-black .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-black .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-black-text);
+}
+.background-black .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-black .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-black .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-black .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-black-text);
+}
+.background-black .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-black .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-black .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-black .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-black-text);
+}
+
+/*
+ * Accordions
+ */
+.background-black .panel__title__link,
+[class*="background-"] .background-black .panel__title__link {
+	border-top-color: var(--bg-black-text);
+	color: var(--bg-black-text);
+}
+.background-black .title__link__icon::before,
+[class*="background-"] .background-black .title__link__icon::before,
+.background-black .title__link__icon::after,
+[class*="background-"] .background-black .title__link__icon::after {
+    background-color: var(--bg-black-text);
+}
+.background-black .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-black .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-black-text);
+	border-color: var(--bg-black-text);
+	color: var(--bg-black-icon-highlight);
+}
+.background-black .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-black .panel__title__link:hover > .title__link__icon,
+.background-black .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-black .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-black-text);
+	border-color: var(--bg-black-text);
+	color: var(--bg-black-icon-highlight);
+}
+.background-black .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-black .panel__title__link:hover .title__link__icon::before,
+.background-black .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-black .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-black .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-black .panel__title__link:hover .title__link__icon::after,
+.background-black .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-black .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-black-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-black input,
+[class*="background-"] .background-black input,
+.background-black textarea,
+[class*="background-"] .background-black textarea,
+.background-black select,
+[class*="background-"] .background-black select,
+.background-black input[type="checkbox"], 
+[class*="background-"] .background-black input[type="checkbox"],
+.background-black input[type="radio"],
+[class*="background-"] .background-black input[type="radio"] {
+	border-color: var(--bg-black-text);
+	color: var(--bg-black-text);
+}
+.background-black input:hover,
+[class*="background-"] .background-black input:hover,
+.background-black textarea:hover,
+[class*="background-"] .background-black textarea:hover,
+.background-black select:hover,
+[class*="background-"] .background-black select:hover,
+.background-black input[type="checkbox"]:hover, 
+[class*="background-"] .background-black input[type="checkbox"]:hover,
+.background-black input[type="radio"]:hover,
+[class*="background-"] .background-black input[type="radio"]:hover {
+	border-color: var(--bg-black-input-highlight);
+}
+.background-black input:focus,
+[class*="background-"] .background-black input:focus,
+.background-black textarea:focus,
+[class*="background-"] .background-black textarea:focus,
+.background-black select:focus,
+[class*="background-"] .background-black select:focus,
+.background-black input[type="checkbox"]:focus, 
+[class*="background-"] .background-black input[type="checkbox"]:focus,
+.background-black input[type="radio"]:focus,
+[class*="background-"] .background-black input[type="radio"]:focus {
+	background-color:var(--bg-black-input-highlight); 
+	border-color:var(--bg-black-input-highlight); 
+	color:var(--bg-black-input-highlight-text);
+}
+.background-black input:checked,
+[class*="background-"] .background-black input:checked,
+.background-black input:checked:hover,
+[class*="background-"] .background-black input:checked:hover,
+.background-black input:checked:focus,
+[class*="background-"] .background-black input:checked:focus {
+	background-color:var(--bg-black-text); 
+	border-color:var(--bg-black-text); 
+}
+
+.background-black button,
+[class*="background-"] .background-black button {
+	background-color:var(--bg-black-button); 
+	color:var(--bg-black-button-text); 
+}
+.background-black button:hover,
+[class*="background-"] .background-black button:hover,
+.background-black button:focus,
+[class*="background-"] .background-black button:focus {
+	background-color:var(--bg-black-button-highlight); 
+	color:var(--bg-black-button-highlight-text); 
+}
+
+.background-black .gform_fileupload_multifile,
+[class*="background-"] .background-black .gform_fileupload_multifile {
+	border-color: var(--bg-black-text);
+}
+.background-black .gform_fileupload_multifile button,
+[class*="background-"] .background-black .gform_fileupload_multifile button,
+.background-black .gform_delete_file,
+[class*="background-"] .background-black .gform_delete_file {
+	color:var(--bg-black-text);
+	text-decoration-color: var(--bg-black-link-decoration);
+}
+.background-black .gform_delete_file:hover,
+[class*="background-"] .background-black .gform_delete_file:hover,
+.background-black .gform_delete_file:focus,
+[class*="background-"] .background-black .gform_delete_file:focus{
+	color:var(--bg-black-text);
+}
+
+.background-black img.gform_ajax_spinner,
+[class*="background-"] .background-black img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner-white.svg");
+}
+
+.background-black .jcf-select .jcf-select-text,
+[class*="background-"] .background-black .jcf-select .jcf-select-text {
+	border-color: var(--bg-black-text);
+	color: var(--bg-black-text);
+}
+.background-black .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-black .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-black-input-highlight);
+}
+.background-black .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-black .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-black-input-highlight);
+	border-color: var(--bg-black-input-highlight);
+	color: var(--bg-black-input-highlight-text);
+}
+.background-black .jcf-select .jcf-select-opener,
+[class*="background-"] .background-black .jcf-select .jcf-select-opener {
+	color: var(--bg-black-text);
+}
+.background-black .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-black .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-black-input-highlight-text);
+}
+.background-black .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-black .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-black-input-highlight);
+}
+
+/* ==========================================================================
+   Background Primary
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-primary .text-underline,
+[class*="background-"] .background-primary .text-underline {
+	text-decoration-color: var(--bg-primary-link-decoration);
+}
+
+main .background-primary .wysiwyg ul li::before,
+main [class*="background-"] .background-primary .wysiwyg ul li::before {
+	background-color: var(--bg-primary-text);
+}
+
+.background-primary th,
+.background-primary td,
+[class*="background-"] .background-primary th,
+[class*="background-"] .background-primary td {
+	border-color:var(--bg-primary-text);
+}
+.background-primary .row-divider th,
+.background-primary .row-divider td,
+[class*="background-"] .background-primary .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-primary .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-primary-text);
+}
+.background-primary hr,
+[class*="background-"] .background-primary hr {
+	background-color:var(--bg-primary-text);
+}
+
+/*
+ * Links
+ */
+.background-primary a:not(.btn),
+[class*="background-"] .background-primary a:not(.btn) {
+	color: var(--bg-primary-link);
+	text-decoration-color: var(--bg-primary-link-decoration);
+}
+.background-primary a:not(.btn):hover,
+[class*="background-"] .background-primary a:not(.btn):hover {
+	color: var(--bg-primary-link-highlight);
+}
+
+.background-primary .link-icon,
+[class*="background-"] .background-primary .link-icon {
+    border-color: var(--bg-primary-text);
+    color: var(--bg-primary-text);
+}
+.background-primary a:hover .link-icon,
+[class*="background-"] .background-primary a:hover .link-icon {
+	background-color: var(--bg-primary-text);
+    border-color: var(--bg-primary-text);
+    color: var(--bg-primary-icon-highlight);
+}
+
+.background-primary .btn--white,
+[class*="background-"] .background-primary .btn--white {
+	color: var(--bg-primary-white-button-text);
+}
+.background-primary .btn--hollow--white:hover,
+[class*="background-"] .background-primary .btn--hollow--white:hover,
+.background-primary a:hover .btn--hollow--white,
+[class*="background-"] .background-primary a:hover .btn--hollow--white {
+	color: var(--bg-primary-white-button-text);
+}
+
+.background-primary .btn--white:hover,
+[class*="background-"] .background-primary .btn--white:hover,
+.background-primary a:hover .btn--white,
+[class*="background-"] .background-primary a:hover .btn--white,
+.background-primary .btn--black:hover,
+[class*="background-"] .background-primary .btn--black:hover,
+.background-primary a:hover .btn--black,
+[class*="background-"] .background-primary a:hover .btn--black,
+.background-primary .btn--primary:hover,
+[class*="background-"] .background-primary .btn--primary:hover,
+.background-primary a:hover .btn--primary,
+[class*="background-"] .background-primary a:hover .btn--primary,
+.background-primary .btn--secondary:hover,
+[class*="background-"] .background-primary .btn--secondary:hover,
+.background-primary a:hover .btn--secondary,
+[class*="background-"] .background-primary a:hover .btn--secondary,
+.background-primary .btn--tertiary:hover,
+[class*="background-"] .background-primary .btn--tertiary:hover,
+.background-primary a:hover .btn--tertiary,
+[class*="background-"] .background-primary a:hover .btn--tertiary {
+	background-color: var(--bg-primary-button-highlight);
+	color: var(--bg-primary-button-highlight-text);
+}
+.background-primary .btn--highlight:hover,
+[class*="background-"] .background-primary .btn--highlight:hover,
+.background-primary a:hover .btn--highlight,
+[class*="background-"] .background-primary a:hover .btn--highlight{
+	background-color: var(--bg-primary-text);
+    color: var(--bg-primary-icon-highlight);
+}
+
+.background-primary .animated-underline,
+[class*="background-"] .background-primary .animated-underline {
+	color: var(--bg-primary-link);
+}
+.background-primary .animated-underline:hover,
+[class*="background-"] .background-primary .animated-underline:hover {
+	color: var(--bg-primary-link-highlight);
+}
+.background-primary .animated-underline::after,
+[class*="background-"] .background-primary .animated-underline::after {
+	background-color: var(--bg-primary-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-primary .pagination__numbers span.current,
+[class*="background-"] .background-primary .pagination__numbers span.current {
+	background-color: var(--bg-primary-text);
+	color: var(--bg-primary-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-primary .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-primary .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-primary-text);
+	color: var(--bg-primary-text);
+}
+.background-primary .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-primary .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-primary-text);
+	border-color: var(--bg-primary-text);
+	color: var(--bg-primary-icon-highlight);
+}
+.background-primary .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-primary .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-primary .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-primary .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-primary-text);
+}
+.background-primary .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-primary .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-primary .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-primary .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-primary-text);
+}
+.background-primary .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-primary .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-primary .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-primary .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-primary-text);
+}
+
+/*
+ * Accordions
+ */
+.background-primary .panel__title__link,
+[class*="background-"] .background-primary .panel__title__link {
+	border-top-color: var(--bg-primary-text);
+	color: var(--bg-primary-text);
+}
+.background-primary .title__link__icon::before,
+[class*="background-"] .background-primary .title__link__icon::before,
+.background-primary .title__link__icon::after,
+[class*="background-"] .background-primary .title__link__icon::after {
+    background-color: var(--bg-primary-text);
+}
+.background-primary .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-primary .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-primary-text);
+	border-color: var(--bg-primary-text);
+	color: var(--bg-primary-icon-highlight);
+}
+.background-primary .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-primary .panel__title__link:hover > .title__link__icon,
+.background-primary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-primary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-primary-text);
+	border-color: var(--bg-primary-text);
+	color: var(--bg-primary-icon-highlight);
+}
+.background-primary .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-primary .panel__title__link:hover .title__link__icon::before,
+.background-primary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-primary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-primary .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-primary .panel__title__link:hover .title__link__icon::after,
+.background-primary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-primary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-primary-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-primary input,
+[class*="background-"] .background-primary input,
+.background-primary textarea,
+[class*="background-"] .background-primary textarea,
+.background-primary select,
+[class*="background-"] .background-primary select,
+.background-primary input[type="checkbox"], 
+[class*="background-"] .background-primary input[type="checkbox"],
+.background-primary input[type="radio"],
+[class*="background-"] .background-primary input[type="radio"] {
+	border-color: var(--bg-primary-text);
+	color: var(--bg-primary-text);
+}
+.background-primary input:hover,
+[class*="background-"] .background-primary input:hover,
+.background-primary textarea:hover,
+[class*="background-"] .background-primary textarea:hover,
+.background-primary select:hover,
+[class*="background-"] .background-primary select:hover,
+.background-primary input[type="checkbox"]:hover, 
+[class*="background-"] .background-primary input[type="checkbox"]:hover,
+.background-primary input[type="radio"]:hover,
+[class*="background-"] .background-primary input[type="radio"]:hover {
+	border-color: var(--bg-primary-input-highlight);
+}
+.background-primary input:focus,
+[class*="background-"] .background-primary input:focus,
+.background-primary textarea:focus,
+[class*="background-"] .background-primary textarea:focus,
+.background-primary select:focus,
+[class*="background-"] .background-primary select:focus,
+.background-primary input[type="checkbox"]:focus, 
+[class*="background-"] .background-primary input[type="checkbox"]:focus,
+.background-primary input[type="radio"]:focus,
+[class*="background-"] .background-primary input[type="radio"]:focus {
+	background-color:var(--bg-primary-input-highlight); 
+	border-color:var(--bg-primary-input-highlight); 
+	color:var(--bg-primary-input-highlight-text);
+}
+.background-primary input:checked,
+[class*="background-"] .background-primary input:checked,
+.background-primary input:checked:hover,
+[class*="background-"] .background-primary input:checked:hover,
+.background-primary input:checked:focus,
+[class*="background-"] .background-primary input:checked:focus {
+	background-color:var(--bg-primary-text); 
+	border-color:var(--bg-primary-text); 
+}
+
+.background-primary button,
+[class*="background-"] .background-primary button {
+	background-color:var(--bg-primary-button); 
+	color:var(--bg-primary-button-text); 
+}
+.background-primary button:hover,
+[class*="background-"] .background-primary button:hover,
+.background-primary button:focus,
+[class*="background-"] .background-primary button:focus {
+	background-color:var(--bg-primary-button-highlight); 
+	color:var(--bg-primary-button-highlight-text); 
+}
+
+.background-primary .gform_fileupload_multifile,
+[class*="background-"] .background-primary .gform_fileupload_multifile {
+	border-color: var(--bg-primary-text);
+}
+.background-primary .gform_fileupload_multifile button,
+[class*="background-"] .background-primary .gform_fileupload_multifile button,
+.background-primary .gform_delete_file,
+[class*="background-"] .background-primary .gform_delete_file {
+	color:var(--bg-primary-text);
+	text-decoration-color: var(--bg-primary-link-decoration);
+}
+.background-primary .gform_delete_file:hover,
+[class*="background-"] .background-primary .gform_delete_file:hover,
+.background-primary .gform_delete_file:focus,
+[class*="background-"] .background-primary .gform_delete_file:focus{
+	color:var(--bg-primary-text);
+}
+
+.background-primary img.gform_ajax_spinner,
+[class*="background-"] .background-primary img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner-white.svg");
+}
+
+.background-primary .jcf-select .jcf-select-text,
+[class*="background-"] .background-primary .jcf-select .jcf-select-text {
+	border-color: var(--bg-primary-text);
+	color: var(--bg-primary-text);
+}
+.background-primary .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-primary .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-primary-input-highlight);
+}
+.background-primary .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-primary .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-primary-input-highlight);
+	border-color: var(--bg-primary-input-highlight);
+	color: var(--bg-primary-input-highlight-text);
+}
+.background-primary .jcf-select .jcf-select-opener,
+[class*="background-"] .background-primary .jcf-select .jcf-select-opener {
+	color: var(--bg-primary-text);
+}
+.background-primary .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-primary .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-primary-input-highlight-text);
+}
+.background-primary .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-primary .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-primary-input-highlight);
+}
+
+/* ==========================================================================
+   Background Secondary
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-secondary .text-underline,
+[class*="background-"] .background-secondary .text-underline {
+	text-decoration-color: var(--bg-secondary-link-decoration);
+}
+
+main .background-secondary .wysiwyg ul li::before,
+main [class*="background-"] .background-secondary .wysiwyg ul li::before {
+	background-color: var(--bg-secondary-text);
+}
+
+.background-secondary th,
+.background-secondary td,
+[class*="background-"] .background-secondary th,
+[class*="background-"] .background-secondary td {
+	border-color:var(--bg-secondary-text);
+}
+.background-secondary .row-divider th,
+.background-secondary .row-divider td,
+[class*="background-"] .background-secondary .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-secondary .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-secondary-text);
+}
+.background-secondary hr,
+[class*="background-"] .background-secondary hr {
+	background-color:var(--bg-secondary-text);
+}
+
+/*
+ * Links
+ */
+.background-secondary a:not(.btn),
+[class*="background-"] .background-secondary a:not(.btn) {
+	color: var(--bg-secondary-link);
+	text-decoration-color: var(--bg-secondary-link-decoration);
+}
+.background-secondary a:not(.btn):hover,
+[class*="background-"] .background-secondary a:not(.btn):hover {
+	color: var(--bg-secondary-link-highlight);
+}
+
+.background-secondary .link-icon,
+[class*="background-"] .background-secondary .link-icon {
+    border-color: var(--bg-secondary-text);
+    color: var(--bg-secondary-text);
+}
+.background-secondary a:hover .link-icon,
+[class*="background-"] .background-secondary a:hover .link-icon {
+	background-color: var(--bg-secondary-text);
+    border-color: var(--bg-secondary-text);
+    color: var(--bg-secondary-icon-highlight);
+}
+
+.background-secondary .btn--white,
+[class*="background-"] .background-secondary .btn--white {
+	color: var(--bg-secondary-white-button-text);
+}
+.background-secondary .btn--hollow--white:hover,
+[class*="background-"] .background-secondary .btn--hollow--white:hover,
+.background-secondary a:hover .btn--hollow--white,
+[class*="background-"] .background-secondary a:hover .btn--hollow--white {
+	color: var(--bg-secondary-white-button-text);
+}
+
+.background-secondary .btn--white:hover,
+[class*="background-"] .background-secondary .btn--white:hover,
+.background-secondary a:hover .btn--white,
+[class*="background-"] .background-secondary a:hover .btn--white,
+.background-secondary .btn--black:hover,
+[class*="background-"] .background-secondary .btn--black:hover,
+.background-secondary a:hover .btn--black,
+[class*="background-"] .background-secondary a:hover .btn--black,
+.background-secondary .btn--primary:hover,
+[class*="background-"] .background-secondary .btn--primary:hover,
+.background-secondary a:hover .btn--primary,
+[class*="background-"] .background-secondary a:hover .btn--primary,
+.background-secondary .btn--secondary:hover,
+[class*="background-"] .background-secondary .btn--secondary:hover,
+.background-secondary a:hover .btn--secondary,
+[class*="background-"] .background-secondary a:hover .btn--secondary,
+.background-secondary .btn--tertiary:hover,
+[class*="background-"] .background-secondary .btn--tertiary:hover,
+.background-secondary a:hover .btn--tertiary,
+[class*="background-"] .background-secondary a:hover .btn--tertiary {
+	background-color: var(--bg-secondary-button-highlight);
+	color: var(--bg-secondary-button-highlight-text);
+}
+.background-secondary .btn--highlight:hover,
+[class*="background-"] .background-secondary .btn--highlight:hover,
+.background-secondary a:hover .btn--highlight,
+[class*="background-"] .background-secondary a:hover .btn--highlight{
+	background-color: var(--bg-secondary-text);
+    color: var(--bg-secondary-icon-highlight);
+}
+
+.background-secondary .animated-underline,
+[class*="background-"] .background-secondary .animated-underline {
+	color: var(--bg-secondary-link);
+}
+.background-secondary .animated-underline:hover,
+[class*="background-"] .background-secondary .animated-underline:hover {
+	color: var(--bg-secondary-link-highlight);
+}
+.background-secondary .animated-underline::after,
+[class*="background-"] .background-secondary .animated-underline::after {
+	background-color: var(--bg-secondary-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-secondary .pagination__numbers span.current,
+[class*="background-"] .background-secondary .pagination__numbers span.current {
+	background-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-secondary .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-secondary .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-text);
+}
+.background-secondary .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-secondary .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-secondary-text);
+	border-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-icon-highlight);
+}
+.background-secondary .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-secondary .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-secondary .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-secondary .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-secondary-text);
+}
+.background-secondary .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-secondary .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-secondary .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-secondary .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-secondary-text);
+}
+.background-secondary .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-secondary .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-secondary .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-secondary .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-secondary-text);
+}
+
+/*
+ * Accordions
+ */
+.background-secondary .panel__title__link,
+[class*="background-"] .background-secondary .panel__title__link {
+	border-top-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-text);
+}
+.background-secondary .title__link__icon::before,
+[class*="background-"] .background-secondary .title__link__icon::before,
+.background-secondary .title__link__icon::after,
+[class*="background-"] .background-secondary .title__link__icon::after {
+    background-color: var(--bg-secondary-text);
+}
+.background-secondary .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-secondary .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-secondary-text);
+	border-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-icon-highlight);
+}
+.background-secondary .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-secondary .panel__title__link:hover > .title__link__icon,
+.background-secondary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-secondary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-secondary-text);
+	border-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-icon-highlight);
+}
+.background-secondary .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-secondary .panel__title__link:hover .title__link__icon::before,
+.background-secondary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-secondary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-secondary .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-secondary .panel__title__link:hover .title__link__icon::after,
+.background-secondary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-secondary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-secondary-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-secondary input,
+[class*="background-"] .background-secondary input,
+.background-secondary textarea,
+[class*="background-"] .background-secondary textarea,
+.background-secondary select,
+[class*="background-"] .background-secondary select,
+.background-secondary input[type="checkbox"], 
+[class*="background-"] .background-secondary input[type="checkbox"],
+.background-secondary input[type="radio"],
+[class*="background-"] .background-secondary input[type="radio"] {
+	border-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-text);
+}
+.background-secondary input:hover,
+[class*="background-"] .background-secondary input:hover,
+.background-secondary textarea:hover,
+[class*="background-"] .background-secondary textarea:hover,
+.background-secondary select:hover,
+[class*="background-"] .background-secondary select:hover,
+.background-secondary input[type="checkbox"]:hover, 
+[class*="background-"] .background-secondary input[type="checkbox"]:hover,
+.background-secondary input[type="radio"]:hover,
+[class*="background-"] .background-secondary input[type="radio"]:hover {
+	border-color: var(--bg-secondary-input-highlight);
+}
+.background-secondary input:focus,
+[class*="background-"] .background-secondary input:focus,
+.background-secondary textarea:focus,
+[class*="background-"] .background-secondary textarea:focus,
+.background-secondary select:focus,
+[class*="background-"] .background-secondary select:focus,
+.background-secondary input[type="checkbox"]:focus, 
+[class*="background-"] .background-secondary input[type="checkbox"]:focus,
+.background-secondary input[type="radio"]:focus,
+[class*="background-"] .background-secondary input[type="radio"]:focus {
+	background-color:var(--bg-secondary-input-highlight); 
+	border-color:var(--bg-secondary-input-highlight); 
+	color:var(--bg-secondary-input-highlight-text);
+}
+.background-secondary input:checked,
+[class*="background-"] .background-secondary input:checked,
+.background-secondary input:checked:hover,
+[class*="background-"] .background-secondary input:checked:hover,
+.background-secondary input:checked:focus,
+[class*="background-"] .background-secondary input:checked:focus {
+	background-color:var(--bg-secondary-text); 
+	border-color:var(--bg-secondary-text); 
+}
+
+.background-secondary button,
+[class*="background-"] .background-secondary button {
+	background-color:var(--bg-secondary-button); 
+	color:var(--bg-secondary-button-text); 
+}
+.background-secondary button:hover,
+[class*="background-"] .background-secondary button:hover,
+.background-secondary button:focus,
+[class*="background-"] .background-secondary button:focus {
+	background-color:var(--bg-secondary-button-highlight); 
+	color:var(--bg-secondary-button-highlight-text); 
+}
+
+.background-secondary .gform_fileupload_multifile,
+[class*="background-"] .background-secondary .gform_fileupload_multifile {
+	border-color: var(--bg-secondary-text);
+}
+.background-secondary .gform_fileupload_multifile button,
+[class*="background-"] .background-secondary .gform_fileupload_multifile button,
+.background-secondary .gform_delete_file,
+[class*="background-"] .background-secondary .gform_delete_file {
+	color:var(--bg-secondary-text);
+	text-decoration-color: var(--bg-secondary-link-decoration);
+}
+.background-secondary .gform_delete_file:hover,
+[class*="background-"] .background-secondary .gform_delete_file:hover,
+.background-secondary .gform_delete_file:focus,
+[class*="background-"] .background-secondary .gform_delete_file:focus{
+	color:var(--bg-secondary-text);
+}
+
+.background-secondary img.gform_ajax_spinner,
+[class*="background-"] .background-secondary img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner-white.svg");
+}
+
+.background-secondary .jcf-select .jcf-select-text,
+[class*="background-"] .background-secondary .jcf-select .jcf-select-text {
+	border-color: var(--bg-secondary-text);
+	color: var(--bg-secondary-text);
+}
+.background-secondary .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-secondary .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-secondary-input-highlight);
+}
+.background-secondary .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-secondary .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-secondary-input-highlight);
+	border-color: var(--bg-secondary-input-highlight);
+	color: var(--bg-secondary-input-highlight-text);
+}
+.background-secondary .jcf-select .jcf-select-opener,
+[class*="background-"] .background-secondary .jcf-select .jcf-select-opener {
+	color: var(--bg-secondary-text);
+}
+.background-secondary .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-secondary .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-secondary-input-highlight-text);
+}
+.background-secondary .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-secondary .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-secondary-input-highlight);
+}
+
+/* ==========================================================================
+   Background Tertiary
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-tertiary .text-underline,
+[class*="background-"] .background-tertiary .text-underline {
+	text-decoration-color: var(--bg-tertiary-link-decoration);
+}
+
+main .background-tertiary .wysiwyg ul li::before,
+main [class*="background-"] .background-tertiary .wysiwyg ul li::before {
+	background-color: var(--bg-tertiary-text);
+}
+
+.background-tertiary th,
+.background-tertiary td,
+[class*="background-"] .background-tertiary th,
+[class*="background-"] .background-tertiary td {
+	border-color:var(--bg-tertiary-text);
+}
+.background-tertiary .row-divider th,
+.background-tertiary .row-divider td,
+[class*="background-"] .background-tertiary .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-tertiary .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-tertiary-text);
+}
+.background-tertiary hr,
+[class*="background-"] .background-tertiary hr {
+	background-color:var(--bg-tertiary-text);
+}
+
+/*
+ * Links
+ */
+.background-tertiary a:not(.btn),
+[class*="background-"] .background-tertiary a:not(.btn) {
+	color: var(--bg-tertiary-link);
+	text-decoration-color: var(--bg-tertiary-link-decoration);
+}
+.background-tertiary a:not(.btn):hover,
+[class*="background-"] .background-tertiary a:not(.btn):hover {
+	color: var(--bg-tertiary-link-highlight);
+}
+
+.background-tertiary .link-icon,
+[class*="background-"] .background-tertiary .link-icon {
+    border-color: var(--bg-tertiary-text);
+    color: var(--bg-tertiary-text);
+}
+.background-tertiary a:hover .link-icon,
+[class*="background-"] .background-tertiary a:hover .link-icon {
+	background-color: var(--bg-tertiary-text);
+    border-color: var(--bg-tertiary-text);
+    color: var(--bg-tertiary-icon-highlight);
+}
+
+.background-tertiary .btn--white,
+[class*="background-"] .background-tertiary .btn--white {
+	color: var(--bg-tertiary-white-button-text);
+}
+.background-tertiary .btn--hollow--white:hover,
+[class*="background-"] .background-tertiary .btn--hollow--white:hover,
+.background-tertiary a:hover .btn--hollow--white,
+[class*="background-"] .background-tertiary a:hover .btn--hollow--white {
+	color: var(--bg-tertiary-white-button-text);
+}
+
+.background-tertiary .btn--white:hover,
+[class*="background-"] .background-tertiary .btn--white:hover,
+.background-tertiary a:hover .btn--white,
+[class*="background-"] .background-tertiary a:hover .btn--white,
+.background-tertiary .btn--black:hover,
+[class*="background-"] .background-tertiary .btn--black:hover,
+.background-tertiary a:hover .btn--black,
+[class*="background-"] .background-tertiary a:hover .btn--black,
+.background-tertiary .btn--primary:hover,
+[class*="background-"] .background-tertiary .btn--primary:hover,
+.background-tertiary a:hover .btn--primary,
+[class*="background-"] .background-tertiary a:hover .btn--primary,
+.background-tertiary .btn--secondary:hover,
+[class*="background-"] .background-tertiary .btn--secondary:hover,
+.background-tertiary a:hover .btn--secondary,
+[class*="background-"] .background-tertiary a:hover .btn--secondary,
+.background-tertiary .btn--tertiary:hover,
+[class*="background-"] .background-tertiary .btn--tertiary:hover,
+.background-tertiary a:hover .btn--tertiary,
+[class*="background-"] .background-tertiary a:hover .btn--tertiary {
+	background-color: var(--bg-tertiary-button-highlight);
+	color: var(--bg-tertiary-button-highlight-text);
+}
+.background-tertiary .btn--highlight:hover,
+[class*="background-"] .background-tertiary .btn--highlight:hover,
+.background-tertiary a:hover .btn--highlight,
+[class*="background-"] .background-tertiary a:hover .btn--highlight{
+	background-color: var(--bg-tertiary-text);
+    color: var(--bg-tertiary-icon-highlight);
+}
+
+.background-tertiary .animated-underline,
+[class*="background-"] .background-tertiary .animated-underline {
+	color: var(--bg-tertiary-link);
+}
+.background-tertiary .animated-underline:hover,
+[class*="background-"] .background-tertiary .animated-underline:hover {
+	color: var(--bg-tertiary-link-highlight);
+}
+.background-tertiary .animated-underline::after,
+[class*="background-"] .background-tertiary .animated-underline::after {
+	background-color: var(--bg-tertiary-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-tertiary .pagination__numbers span.current,
+[class*="background-"] .background-tertiary .pagination__numbers span.current {
+	background-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-tertiary .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-tertiary .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-text);
+}
+.background-tertiary .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-tertiary .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-tertiary-text);
+	border-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-icon-highlight);
+}
+.background-tertiary .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-tertiary .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-tertiary .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-tertiary .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-tertiary-text);
+}
+.background-tertiary .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-tertiary .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-tertiary .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-tertiary .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-tertiary-text);
+}
+.background-tertiary .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-tertiary .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-tertiary .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-tertiary .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-tertiary-text);
+}
+
+/*
+ * Accordions
+ */
+.background-tertiary .panel__title__link,
+[class*="background-"] .background-tertiary .panel__title__link {
+	border-top-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-text);
+}
+.background-tertiary .title__link__icon::before,
+[class*="background-"] .background-tertiary .title__link__icon::before,
+.background-tertiary .title__link__icon::after,
+[class*="background-"] .background-tertiary .title__link__icon::after {
+    background-color: var(--bg-tertiary-text);
+}
+.background-tertiary .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-tertiary .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-tertiary-text);
+	border-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-icon-highlight);
+}
+.background-tertiary .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-tertiary .panel__title__link:hover > .title__link__icon,
+.background-tertiary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-tertiary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-tertiary-text);
+	border-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-icon-highlight);
+}
+.background-tertiary .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-tertiary .panel__title__link:hover .title__link__icon::before,
+.background-tertiary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-tertiary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-tertiary .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-tertiary .panel__title__link:hover .title__link__icon::after,
+.background-tertiary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-tertiary .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-tertiary-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-tertiary input,
+[class*="background-"] .background-tertiary input,
+.background-tertiary textarea,
+[class*="background-"] .background-tertiary textarea,
+.background-tertiary select,
+[class*="background-"] .background-tertiary select,
+.background-tertiary input[type="checkbox"], 
+[class*="background-"] .background-tertiary input[type="checkbox"],
+.background-tertiary input[type="radio"],
+[class*="background-"] .background-tertiary input[type="radio"] {
+	border-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-text);
+}
+.background-tertiary input:hover,
+[class*="background-"] .background-tertiary input:hover,
+.background-tertiary textarea:hover,
+[class*="background-"] .background-tertiary textarea:hover,
+.background-tertiary select:hover,
+[class*="background-"] .background-tertiary select:hover,
+.background-tertiary input[type="checkbox"]:hover, 
+[class*="background-"] .background-tertiary input[type="checkbox"]:hover,
+.background-tertiary input[type="radio"]:hover,
+[class*="background-"] .background-tertiary input[type="radio"]:hover {
+	border-color: var(--bg-tertiary-input-highlight);
+}
+.background-tertiary input:focus,
+[class*="background-"] .background-tertiary input:focus,
+.background-tertiary textarea:focus,
+[class*="background-"] .background-tertiary textarea:focus,
+.background-tertiary select:focus,
+[class*="background-"] .background-tertiary select:focus,
+.background-tertiary input[type="checkbox"]:focus, 
+[class*="background-"] .background-tertiary input[type="checkbox"]:focus,
+.background-tertiary input[type="radio"]:focus,
+[class*="background-"] .background-tertiary input[type="radio"]:focus {
+	background-color:var(--bg-tertiary-input-highlight); 
+	border-color:var(--bg-tertiary-input-highlight); 
+	color:var(--bg-tertiary-input-highlight-text);
+}
+.background-tertiary input:checked,
+[class*="background-"] .background-tertiary input:checked,
+.background-tertiary input:checked:hover,
+[class*="background-"] .background-tertiary input:checked:hover,
+.background-tertiary input:checked:focus,
+[class*="background-"] .background-tertiary input:checked:focus {
+	background-color:var(--bg-tertiary-text); 
+	border-color:var(--bg-tertiary-text); 
+}
+
+.background-tertiary button,
+[class*="background-"] .background-tertiary button {
+	background-color:var(--bg-tertiary-button); 
+	color:var(--bg-tertiary-button-text); 
+}
+.background-tertiary button:hover,
+[class*="background-"] .background-tertiary button:hover,
+.background-tertiary button:focus,
+[class*="background-"] .background-tertiary button:focus {
+	background-color:var(--bg-tertiary-button-highlight); 
+	color:var(--bg-tertiary-button-highlight-text); 
+}
+
+.background-tertiary .gform_fileupload_multifile,
+[class*="background-"] .background-tertiary .gform_fileupload_multifile {
+	border-color: var(--bg-tertiary-text);
+}
+.background-tertiary .gform_fileupload_multifile button,
+[class*="background-"] .background-tertiary .gform_fileupload_multifile button,
+.background-tertiary .gform_delete_file,
+[class*="background-"] .background-tertiary .gform_delete_file {
+	color:var(--bg-tertiary-text);
+	text-decoration-color: var(--bg-tertiary-link-decoration);
+}
+.background-tertiary .gform_delete_file:hover,
+[class*="background-"] .background-tertiary .gform_delete_file:hover,
+.background-tertiary .gform_delete_file:focus,
+[class*="background-"] .background-tertiary .gform_delete_file:focus{
+	color:var(--bg-tertiary-text);
+}
+
+.background-tertiary img.gform_ajax_spinner,
+[class*="background-"] .background-tertiary img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner-white.svg");
+}
+
+.background-tertiary .jcf-select .jcf-select-text,
+[class*="background-"] .background-tertiary .jcf-select .jcf-select-text {
+	border-color: var(--bg-tertiary-text);
+	color: var(--bg-tertiary-text);
+}
+.background-tertiary .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-tertiary .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-tertiary-input-highlight);
+}
+.background-tertiary .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-tertiary .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-tertiary-input-highlight);
+	border-color: var(--bg-tertiary-input-highlight);
+	color: var(--bg-tertiary-input-highlight-text);
+}
+.background-tertiary .jcf-select .jcf-select-opener,
+[class*="background-"] .background-tertiary .jcf-select .jcf-select-opener {
+	color: var(--bg-tertiary-text);
+}
+.background-tertiary .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-tertiary .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-tertiary-input-highlight-text);
+}
+.background-tertiary .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-tertiary .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-tertiary-input-highlight);
+}
+
+/* ==========================================================================
+   Background Highlight
+   ========================================================================== */
+
+/*
+ * Typography
+ */
+.background-highlight .text-underline,
+[class*="background-"] .background-highlight .text-underline {
+	text-decoration-color: var(--bg-highlight-link-decoration);
+}
+
+main .background-highlight .wysiwyg ul li::before,
+main [class*="background-"] .background-highlight .wysiwyg ul li::before {
+	background-color: var(--bg-highlight-text);
+}
+
+.background-highlight th,
+.background-highlight td,
+[class*="background-"] .background-highlight th,
+[class*="background-"] .background-highlight td {
+	border-color:var(--bg-highlight-text);
+}
+.background-highlight .row-divider th,
+.background-highlight .row-divider td,
+[class*="background-"] .background-highlight .row-divider thead + tbody tr:first-child th,
+[class*="background-"] .background-highlight .row-divider thead + tbody tr:first-child td {
+	border-top-color: var(--bg-highlight-text);
+}
+.background-highlight hr,
+[class*="background-"] .background-highlight hr {
+	background-color:var(--bg-highlight-text);
+}
+
+/*
+ * Links
+ */
+.background-highlight a:not(.btn),
+[class*="background-"] .background-highlight a:not(.btn) {
+	color: var(--bg-highlight-link);
+	text-decoration-color: var(--bg-highlight-link-decoration);
+}
+.background-highlight a:not(.btn):hover,
+[class*="background-"] .background-highlight a:not(.btn):hover {
+	color: var(--bg-highlight-link-highlight);
+}
+
+.background-highlight .link-icon,
+[class*="background-"] .background-highlight .link-icon {
+    border-color: var(--bg-highlight-text);
+    color: var(--bg-highlight-text);
+}
+.background-highlight a:hover .link-icon,
+[class*="background-"] .background-highlight a:hover .link-icon {
+	background-color: var(--bg-highlight-text);
+    border-color: var(--bg-highlight-text);
+    color: var(--bg-highlight-icon-highlight);
+}
+
+.background-highlight .btn--white,
+[class*="background-"] .background-highlight .btn--white {
+	color: var(--bg-highlight-white-button-text);
+}
+.background-highlight .btn--hollow--white:hover,
+[class*="background-"] .background-highlight .btn--hollow--white:hover,
+.background-highlight a:hover .btn--hollow--white,
+[class*="background-"] .background-highlight a:hover .btn--hollow--white {
+	color: var(--bg-highlight-white-button-text);
+}
+
+.background-highlight .btn--white:hover,
+[class*="background-"] .background-highlight .btn--white:hover {
+	background-color: var(--bg-highlight-button);
+	color: var(--bg-highlight-button-text);
+}
+.background-highlight a:hover .btn--white,
+[class*="background-"] .background-highlight a:hover .btn--white,
+.background-highlight .btn--black:hover,
+[class*="background-"] .background-highlight .btn--black:hover,
+.background-highlight a:hover .btn--black,
+[class*="background-"] .background-highlight a:hover .btn--black,
+.background-highlight .btn--primary:hover,
+[class*="background-"] .background-highlight .btn--primary:hover,
+.background-highlight a:hover .btn--primary,
+[class*="background-"] .background-highlight a:hover .btn--primary,
+.background-highlight .btn--secondary:hover,
+[class*="background-"] .background-highlight .btn--secondary:hover,
+.background-highlight a:hover .btn--secondary,
+[class*="background-"] .background-highlight a:hover .btn--secondary,
+.background-highlight .btn--tertiary:hover,
+[class*="background-"] .background-highlight .btn--tertiary:hover,
+.background-highlight a:hover .btn--tertiary,
+[class*="background-"] .background-highlight a:hover .btn--tertiary,
+.background-highlight .btn--highlight:hover,
+[class*="background-"] .background-highlight .btn--highlight:hover,
+.background-highlight a:hover .btn--highlight,
+[class*="background-"] .background-highlight a:hover .btn--highlight {
+	background-color: var(--bg-highlight-button-highlight);
+	color: var(--bg-highlight-button-highlight-text);
+}
+
+.background-highlight .animated-underline,
+[class*="background-"] .background-highlight .animated-underline {
+	color: var(--bg-highlight-link);
+}
+.background-highlight .animated-underline:hover,
+[class*="background-"] .background-highlight .animated-underline:hover {
+	color: var(--bg-highlight-link-highlight);
+}
+.background-highlight .animated-underline::after,
+[class*="background-"] .background-highlight .animated-underline::after {
+	background-color: var(--bg-highlight-link-decoration);
+}
+
+/*
+ * Pagination
+ */
+.background-highlight .pagination__numbers span.current,
+[class*="background-"] .background-highlight .pagination__numbers span.current {
+	background-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-icon-highlight);
+}
+
+/*
+ * Slider Controls
+ */
+.background-highlight .flexslider--directional-offset .flex-direction-nav li a .link-icon,
+[class*="background-"] .background-highlight .flexslider--directional-offset .flex-direction-nav li a .link-icon {
+	border-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-text);
+}
+.background-highlight .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon,
+[class*="background-"] .background-highlight .flexslider--directional-offset .flex-direction-nav li a:hover .link-icon {
+	background-color: var(--bg-highlight-text);
+	border-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-icon-highlight);
+}
+.background-highlight .flexslider[data-columnSlider] .flex-control-paging li a,
+[class*="background-"] .background-highlight .flexslider[data-columnSlider] .flex-control-paging li a,
+.background-highlight .flexslider--paging-offset .flex-control-paging li a,
+[class*="background-"] .background-highlight .flexslider--paging-offset .flex-control-paging li a {
+	border-color: var(--bg-highlight-text);
+}
+.background-highlight .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+[class*="background-"] .background-highlight .flexslider[data-columnSlider] .flex-control-paging li a:hover,
+.background-highlight .flexslider--paging-offset .flex-control-paging li a:hover,
+[class*="background-"] .background-highlight .flexslider--paging-offset .flex-control-paging li a:hover {
+	background-color: var(--bg-highlight-text);
+}
+.background-highlight .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+[class*="background-"] .background-highlight .flexslider[data-columnSlider] .flex-control-paging li a.flex-active,
+.background-highlight .flexslider--paging-offset .flex-control-paging li a.flex-active,
+[class*="background-"] .background-highlight .flexslider--paging-offset .flex-control-paging li a.flex-active {
+	background-color: var(--bg-highlight-text);
+}
+
+/*
+ * Accordions
+ */
+.background-highlight .panel__title__link,
+[class*="background-"] .background-highlight .panel__title__link {
+	border-top-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-text);
+}
+.background-highlight .title__link__icon::before,
+[class*="background-"] .background-highlight .title__link__icon::before,
+.background-highlight .title__link__icon::after,
+[class*="background-"] .background-highlight .title__link__icon::after {
+    background-color: var(--bg-highlight-text);
+}
+.background-highlight .accordion__panel--open > .panel__title > .panel__title__link,
+[class*="background-"] .background-highlight .accordion__panel--open > .panel__title > .panel__title__link {
+	background-color: var(--bg-highlight-text);
+	border-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-icon-highlight);
+}
+.background-highlight .panel__title__link:hover > .title__link__icon,
+[class*="background-"] .background-highlight .panel__title__link:hover > .title__link__icon,
+.background-highlight .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon,
+[class*="background-"] .background-highlight .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon {
+	background-color: var(--bg-highlight-text);
+	border-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-icon-highlight);
+}
+.background-highlight .panel__title__link:hover .title__link__icon::before,
+[class*="background-"] .background-highlight .panel__title__link:hover .title__link__icon::before,
+.background-highlight .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+[class*="background-"] .background-highlight .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::before,
+.background-highlight .panel__title__link:hover .title__link__icon::after,
+[class*="background-"] .background-highlight .panel__title__link:hover .title__link__icon::after,
+.background-highlight .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after,
+[class*="background-"] .background-highlight .accordion__panel--open > .panel__title > .panel__title__link .title__link__icon::after {
+	background-color: var(--bg-highlight-icon-highlight);
+}
+
+/*
+ * Forms
+ */
+.background-highlight input,
+[class*="background-"] .background-highlight input,
+.background-highlight textarea,
+[class*="background-"] .background-highlight textarea,
+.background-highlight select,
+[class*="background-"] .background-highlight select,
+.background-highlight input[type="checkbox"], 
+[class*="background-"] .background-highlight input[type="checkbox"],
+.background-highlight input[type="radio"],
+[class*="background-"] .background-highlight input[type="radio"] {
+	border-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-text);
+}
+.background-highlight input:hover,
+[class*="background-"] .background-highlight input:hover,
+.background-highlight textarea:hover,
+[class*="background-"] .background-highlight textarea:hover,
+.background-highlight select:hover,
+[class*="background-"] .background-highlight select:hover,
+.background-highlight input[type="checkbox"]:hover, 
+[class*="background-"] .background-highlight input[type="checkbox"]:hover,
+.background-highlight input[type="radio"]:hover,
+[class*="background-"] .background-highlight input[type="radio"]:hover {
+	border-color: var(--bg-highlight-input-highlight);
+}
+.background-highlight input:focus,
+[class*="background-"] .background-highlight input:focus,
+.background-highlight textarea:focus,
+[class*="background-"] .background-highlight textarea:focus,
+.background-highlight select:focus,
+[class*="background-"] .background-highlight select:focus,
+.background-highlight input[type="checkbox"]:focus, 
+[class*="background-"] .background-highlight input[type="checkbox"]:focus,
+.background-highlight input[type="radio"]:focus,
+[class*="background-"] .background-highlight input[type="radio"]:focus {
+	background-color:var(--bg-highlight-input-highlight); 
+	border-color:var(--bg-highlight-input-highlight); 
+	color:var(--bg-highlight-input-highlight-text);
+}
+.background-highlight input:checked,
+[class*="background-"] .background-highlight input:checked,
+.background-highlight input:checked:hover,
+[class*="background-"] .background-highlight input:checked:hover,
+.background-highlight input:checked:focus,
+[class*="background-"] .background-highlight input:checked:focus {
+	background-color:var(--bg-highlight-text); 
+	border-color:var(--bg-highlight-text); 
+}
+
+.background-highlight button,
+[class*="background-"] .background-highlight button {
+	background-color:var(--bg-highlight-button); 
+	color:var(--bg-highlight-button-text); 
+}
+.background-highlight button:hover,
+[class*="background-"] .background-highlight button:hover,
+.background-highlight button:focus,
+[class*="background-"] .background-highlight button:focus {
+	background-color:var(--bg-highlight-button-highlight); 
+	color:var(--bg-highlight-button-highlight-text); 
+}
+
+.background-highlight .gform_fileupload_multifile,
+[class*="background-"] .background-highlight .gform_fileupload_multifile {
+	border-color: var(--bg-highlight-text);
+}
+.background-highlight .gform_fileupload_multifile button,
+[class*="background-"] .background-highlight .gform_fileupload_multifile button,
+.background-highlight .gform_delete_file,
+[class*="background-"] .background-highlight .gform_delete_file {
+	color:var(--bg-highlight-text);
+	text-decoration-color: var(--bg-highlight-link-decoration);
+}
+.background-highlight .gform_delete_file:hover,
+[class*="background-"] .background-highlight .gform_delete_file:hover,
+.background-highlight .gform_delete_file:focus,
+[class*="background-"] .background-highlight .gform_delete_file:focus{
+	color:var(--bg-highlight-text);
+}
+
+.background-highlight img.gform_ajax_spinner,
+[class*="background-"] .background-highlight img.gform_ajax_spinner {
+	content: url("../img/svg/gf-spinner-white.svg");
+}
+
+.background-highlight .jcf-select .jcf-select-text,
+[class*="background-"] .background-highlight .jcf-select .jcf-select-text {
+	border-color: var(--bg-highlight-text);
+	color: var(--bg-highlight-text);
+}
+.background-highlight .jcf-select:hover .jcf-select-text,
+[class*="background-"] .background-highlight .jcf-select:hover .jcf-select-text {
+	border-color: var(--bg-highlight-input-highlight);
+}
+.background-highlight .jcf-select.jcf-drop-active .jcf-select-text,
+[class*="background-"] .background-highlight .jcf-select.jcf-drop-active .jcf-select-text {
+	background-color: var(--bg-highlight-input-highlight);
+	border-color: var(--bg-highlight-input-highlight);
+	color: var(--bg-highlight-input-highlight-text);
+}
+.background-highlight .jcf-select .jcf-select-opener,
+[class*="background-"] .background-highlight .jcf-select .jcf-select-opener {
+	color: var(--bg-highlight-text);
+}
+.background-highlight .jcf-select.jcf-drop-active .jcf-select-opener,
+[class*="background-"] .background-highlight .jcf-select.jcf-drop-active .jcf-select-opener {
+	color: var(--bg-highlight-input-highlight-text);
+}
+.background-highlight .jcf-select-drop .jcf-select-drop-content,
+[class*="background-"] .background-highlight .jcf-select-drop .jcf-select-drop-content {
+	border-color: var(--bg-highlight-input-highlight);
+}

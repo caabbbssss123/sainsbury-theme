@@ -1,0 +1,9 @@
+div,
+blockquote {
+	border: dashed 1px #aaa;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+div div {
+	background-color: #fafafa;
+}

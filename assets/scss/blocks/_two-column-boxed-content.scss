@@ -1,0 +1,51 @@
+.two-column-boxed-content {
+  margin: 100px 0 0;
+  padding-bottom: 200px;
+  color: $white;
+
+  @include media-breakpoint-down(lg) {
+    margin: 90px 0 0;
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: 60px 0 0;
+    padding-bottom: 80px;
+  }
+
+  &__box {
+    padding: 60px;
+    background-color: rgba($white, 0.15);
+    border-radius: 10px;
+
+    @include media-breakpoint-down(md) {
+      padding: 30px;
+    }
+  }
+
+  .row {
+    --gutter-x: 60px;
+
+    @include media-breakpoint-down(lg) {
+      --gutter-y: 40px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+  }
+
+  &__body-copy {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    margin-top: 40px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 24px;
+    }
+  }
+}

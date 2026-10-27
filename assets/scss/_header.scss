@@ -1,0 +1,233 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .admin-bar & {
+    top: var(--wp-admin--admin-bar--height);
+    & + main {
+      margin-top: var(--wp-admin--admin-bar--height);
+    }
+  }
+
+  .inner-wrapper {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      height: 120px;
+    }
+  }
+
+  .logo {
+    display: block;
+    svg {
+      display: block;
+      height: 70px;
+      width: auto;
+
+      @include media-breakpoint-down(xl) {
+        height: 60px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        height: 50px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: 40px;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    @include media-breakpoint-down(xl) {
+      gap: 50px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      gap: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    > li {
+      > a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $white;
+
+        @include media-breakpoint-down(lg) {
+          font-size: 16px;
+        }
+
+        &:hover {
+          &::before {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 3px;
+          width: 100%;
+          background-color: $white;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  .nav {
+    .admin-bar & {
+      top: var(--wp-admin--admin-bar--height);
+    }
+    @include media-breakpoint-down(md) {
+      padding: 100px 20px 20px;
+      display: block;
+      position: fixed;
+      right: -100%;
+      top: 0;
+      max-width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      width: 300px;
+      background-color: $dark-blue;
+      z-index: 999;
+
+      .admin-bar & {
+        top: var(--wp-admin--admin-bar--height);
+        height: calc(100vh - var(--wp-admin--admin-bar--height));
+        height: calc(100dvh - var(--wp-admin--admin-bar--height));
+      }
+    }
+  }
+
+  .navbar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0;
+    order: 2;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    z-index: 9999;
+    width: auto;
+    display: block;
+
+    @include media-breakpoint-up(md) {
+      order: 0;
+      display: none;
+    }
+
+    &:hover {
+      .icon-bar {
+        border-color: $white;
+        background-color: $white;
+        border-color: $white;
+        color: $white;
+      }
+    }
+
+    &::after {
+      display: none !important;
+    }
+
+    &.active {
+      &:hover {
+        .icon-bar {
+          border-color: $white;
+          background-color: $white;
+          border-color: $white;
+          color: $white;
+        }
+      }
+
+      .icon-bar {
+        border-color: $white;
+        background-color: $white;
+      }
+
+      .icon-bar:nth-of-type(2) {
+        top: 9px;
+        transform: rotate(45deg);
+      }
+
+      .icon-bar:nth-of-type(3) {
+        opacity: 0;
+      }
+
+      .icon-bar:nth-of-type(4) {
+        top: -3px;
+        transform: rotate(-45deg);
+        width: 21px;
+      }
+
+      #navBarText {
+        color: $white;
+      }
+    }
+
+    .sr-only {
+      display: none;
+    }
+
+    .icon-bar {
+      display: block;
+      top: 0;
+      width: 21px;
+      height: 2px;
+      border-radius: 3px;
+      overflow: hidden;
+      color: $white;
+      background-color: $white;
+      border: 1px solid $white;
+      margin: 0 auto;
+      position: relative;
+      transition: all 0.4s ease;
+      cursor: pointer;
+
+      &:nth-of-type(4) {
+        width: 12px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+
+    .icon-bar + .icon-bar {
+      margin-top: 4px;
+    }
+  }
+}
+
+body.has-smooth-scroll.admin-bar header .nav {
+  @include media-breakpoint-down(md) {
+    top: 0;
+  }
+}

@@ -1,0 +1,103 @@
+/*
+ * Gutenberg reset
+ * This CSS is added to combat the app.css from the Gutenberg editor and restor its layout in the backend.
+ */
+.wp-block {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.wp-block input,
+.wp-block textarea,
+.wp-block select,
+.wp-block button { 
+	background-color: #fff; 
+	border-width: 1px;
+	border: solid 1px #8c8f94; 
+	color: #2c3338; 
+	box-shadow: none;
+	border-radius:0;
+	cursor:pointer;
+	display:block;
+	margin:0;
+	padding:1em;
+	text-shadow:none;
+	width:100%;
+	max-width: 100%;
+	font-weight: 400;
+	
+	transition: none;
+  -webkit-appearance: none;
+}
+.wp-block input:hover, 
+.wp-block textarea:hover, 
+.wp-block select:hover {
+	border-color: #8c8f94; 
+}
+.wp-block input:focus, 
+.wp-block textarea:focus { 
+	background-color: #fff; 
+	border-color: #007cba;
+	color: #2c3338; 
+	outline: #007cba 1px solid;
+}
+.wp-block textarea,
+.wp-block textarea[rows] { 
+	height:140px;
+}
+
+.wp-block select { 
+	background-image:none;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.wp-block input[type="checkbox"], 
+.wp-block input[type="radio"] { 
+	background-color:transparent;
+	float:left;
+	height:20px; 
+	margin-right:0.625rem;
+	width:20px;
+	
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.wp-block input[type="radio"] {
+    border-radius:50%;
+}
+.wp-block input:checked { 
+	background-color:var(--bg-white-link); 
+	background-clip:content-box;
+	border-color:var(--bg-white-link);
+	padding:var(--stroke-width);
+}
+.wp-block button,
+.wp-block input[type="button"] {
+	width: auto;
+	padding: 3px 8px 4px;
+	background: transparent;
+	display: inline-block;
+}
+.wp-block .acf-editor-wrap .wp-switch-editor {
+	margin: 5px 0 0 5px;
+}
+body.wp-core-ui .wp-block select {
+	background: #fff url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;	
+}
+h1.wp-block.wp-block-post-title {
+	color: #1d2327;
+    font-size: 2em;
+    margin-top: .67em;
+    margin-bottom: .67em;
+}
+/* added overlay to make sure block is clickable to switch from edit/view mode */
+.swiper:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}

@@ -1,0 +1,50 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$blue: #0E6295;
+$blue-alt: #2e4763;
+$blue-alt-2: #00598E;
+$dark-blue: #05203D;
+$light-blue: #79bce8;
+
+$standard-font: "Onest", sans-serif;
+$base-font-size: 24;
+$mobile-font-size: 18;
+
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 481px,
+  sm: 576px,
+  md: 783px,
+  lg: 993px,
+  xl: 1201px,
+  xxl: 1441px,
+  xxxl: 1561px,
+);
+
+$container-max-widths: (
+  xsm: 100%,
+  sm: 100%,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1530px,
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-row-columns: 6;
+$container-padding-x: $grid-gutter-width * 0.5;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+$gutters: $spacers;

@@ -1,0 +1,363 @@
+footer {
+  background-color: $dark-blue;
+  padding: 200px 0;
+  color: $white;
+
+  @include media-breakpoint-down(xl) {
+    padding: 160px 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 120px 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 80px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 60px 0 30px;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+
+    @include media-breakpoint-up(lg) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 30px;
+      align-items: start;
+    }
+  }
+
+  .footer-brand {
+    order: 1;
+  }
+
+  .footer-form-col {
+    order: 2;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .footer-meta {
+    order: 3;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .footer-brand,
+    .footer-form-col,
+    .footer-meta {
+      order: 0;
+    }
+
+    .footer-brand {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .footer-meta {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .footer-form-col {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: 60px;
+    svg {
+      display: block;
+      height: 66px;
+      @include media-breakpoint-down(md) {
+        margin: auto;
+      }
+      @include media-breakpoint-down(sm) {
+        height: 50px;
+      }
+    }
+  }
+
+  .company-details {
+    margin-bottom: 80px;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+    }
+
+    svg {
+      height: 22px;
+    }
+  }
+
+  .copyright-text {
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.71;
+    }
+  }
+
+  .form-heading {
+    font-size: 30px;
+    margin-bottom: 70px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 50px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer-form {
+    .gform_wrapper {
+      margin: 0;
+    }
+
+    .gform_heading,
+    .gform_validation_errors,
+    .gform_required_legend {
+      display: none;
+    }
+
+    .gform_fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 20px;
+
+      @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 36px;
+      }
+    }
+
+    .gfield {
+      position: relative;
+      min-width: 0;
+      margin: 0;
+      padding-top: 28px;
+
+      &.gfield--type-honeypot,
+      &.gform_validation_container {
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+      }
+    }
+
+    .gfield--type-name {
+      grid-column: 1 / -1;
+      min-inline-size: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .gfield_label_before_complex {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .gfield--type-name .ginput_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+
+      @include media-breakpoint-down(md) {
+        grid-template-columns: 1fr;
+        row-gap: 36px;
+      }
+    }
+
+    .name_first,
+    .name_last {
+      position: relative;
+      min-width: 0;
+      padding-top: 28px;
+      border-bottom: 1px solid $white;
+    }
+
+    .gfield--type-textarea {
+      grid-column: 1;
+    }
+
+    .gfield--type-textarea .gfield_required {
+      display: none;
+    }
+
+    .gfield_label,
+    .gform-field-label--type-sub {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 15px;
+      margin: 0;
+      color: $white;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.2;
+      pointer-events: none;
+      transition: transform 200ms ease, font-size 200ms ease;
+
+      @include media-breakpoint-down(md) {
+        font-size: 20px;
+      }
+    }
+
+    .gfield_required {
+      color: inherit;
+      margin-left: 2px;
+    }
+
+    .gfield:not(.gfield--type-name).is-active,
+    .gfield:not(.gfield--type-name).has-value,
+    .name_first.is-active,
+    .name_first.has-value,
+    .name_last.is-active,
+    .name_last.has-value {
+      .gfield_label,
+      .gform-field-label--type-sub {
+        font-size: 13px;
+        transform: translateY(-5px);
+      }
+    }
+
+    .gfield:not(.gfield--type-name) .ginput_container {
+      border-bottom: 1px solid $white;
+    }
+
+    .ginput_container {
+      margin: 0;
+    }
+
+    input:not([type="hidden"]):not([type="submit"]):not([type="button"]),
+    textarea,
+    select {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0 0 12px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      color: $white;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.2;
+      outline: none;
+      appearance: none;
+    }
+
+    textarea {
+      display: block;
+      height: 100px;
+      min-height: 0;
+      resize: none;
+      overflow: hidden;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: transparent;
+    }
+
+    .validation_message {
+      margin: 8px 0 0;
+      color: $white;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .gform_counter,
+    .ginput_counter,
+    .charleft {
+      display: none;
+    }
+
+    .gform_footer {
+      display: flex;
+      height: 70px;
+      margin-top: -70px;
+      margin-left: auto;
+
+      @include media-breakpoint-up(md) {
+        width: calc((100% - 30px) / 2);
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-top: 36px;
+      }
+    }
+
+    .gform_button {
+      cursor: pointer;
+
+      @include media-breakpoint-down(md) {
+        margin-left: auto;
+      }
+
+      .gform-loader,
+      .gform_ajax_spinner {
+        display: none;
+      }
+
+      &.gform-has-spinner {
+        background-image: none;
+        -webkit-text-fill-color: currentColor;
+      }
+    }
+  }
+}

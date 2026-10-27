@@ -1,0 +1,74 @@
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints) {
+	@if not map-has-key($breakpoints, $name) {
+		@error "Breakpoint `#{$name}` not found in `$grid-breakpoints`.";
+	}
+
+	$names: map-keys($breakpoints);
+	$n: index($names, $name);
+
+	@if $n < length($names) {
+		@return nth($names, $n + 1);
+	}
+
+	@return null;
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+	@if not map-has-key($breakpoints, $name) {
+		@error "Breakpoint `#{$name}` not found in `$grid-breakpoints`.";
+	}
+
+	$min: map-get($breakpoints, $name);
+
+	@if $min != 0 {
+		@return $min;
+	}
+
+	@return null;
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+	@if not map-has-key($breakpoints, $name) {
+		@error "Breakpoint `#{$name}` not found in `$grid-breakpoints`.";
+	}
+
+	$max: map-get($breakpoints, $name);
+
+	@if $max != 0 {
+		@return $max;
+	}
+
+	@return null;
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+	@if breakpoint-min($name, $breakpoints) == null {
+		@return "";
+	}
+
+	@return "-#{$name}";
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+	$max: breakpoint-max($name, $breakpoints);
+
+	@if $max {
+		@media (max-width: $max) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
